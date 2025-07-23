@@ -13,6 +13,7 @@ set (SRT_VERSION 1.5.4)
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/scripts")
 include(CheckSymbolExists)
 include(haiUtil) # needed for set_version_variables
+
 # CMake version 3.0 introduced the VERSION option of the project() command
 # to specify a project version as well as the name.
 if(${CMAKE_VERSION} VERSION_LESS "3.0.0")

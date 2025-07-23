@@ -1,0 +1,33 @@
+﻿{
+  "configurations": [
+    {
+      "name": "WSL-GCC-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeExecutable": "cmake",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "wslPath": "${defaultWSLPath}",
+      "variables": [
+        {
+          "name": "OPENSSL_ROOT_DIR",
+          "value": "/mnt/f/share/workstation/ysp/trunk/third_party/openssl-1.1.1k",
+          "type": "PATH"
+        },
+        {
+          "name": "OPENSSL_INCLUDE_DIR",
+          "value": "/mnt/f/share/workstation/ysp/trunk/third_party/openssl-1.1.1k/include",
+          "type": "PATH"
+        },
+        {
+          "name": "OPENSSL_SSL_LIBRARY",
+          "value": "/mnt/f/share/workstation/ysp/trunk/endpoint/2.0/server-release/libs/linux-centos/"
+        }
+      ]
+    }
+  ]
+}
