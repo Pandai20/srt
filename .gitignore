@@ -48,3 +48,23 @@ compile_commands.json
 .idea/
 cmake-build-debug/
 tags
+
+# 忽略 VS 工程生成文件
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.VC.opendb
+
+# 忽略构建输出文件夹
+bin/
+out/
+build/
+**/out/
+**/bin/
+
+# 忽略 CMake 构建临时文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
